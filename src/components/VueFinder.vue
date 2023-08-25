@@ -9,7 +9,6 @@
         <v-f-toolbar :data="fetchData" />
         <v-f-breadcrumb :data="fetchData"/>
         <v-f-explorer :view="view" :data="fetchData"/>
-        <v-f-statusbar :data="fetchData"/>
       </div>
 
       <component v-if="modal.active" :is="'v-f-modal-'+ modal.type" :selection="modal.data" :current="fetchData"/>
@@ -94,7 +93,7 @@ const fetchData = reactive({adapter: adapter.value, storages: [], dirname: '.', 
 
 // View Management
 const view = ref(getStore('viewport', 'grid'));
-const darkMode = props.usePropDarkMode ? computed(() => props.dark) : ref(getStore('darkMode', props.dark));
+const darkMode = props.usePropDarkMode ? computed(() => props.dark) : ref(localStorage.getItem('theme') === 'dark');
 
 emitter.on('vf-darkMode-toggle', () => {
   darkMode.value = !darkMode.value;

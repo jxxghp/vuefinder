@@ -6,7 +6,11 @@
     }
 
     .vf-explorer-selected {
-        @apply bg-neutral-100 border border-neutral-300 dark:bg-slate-700 dark:border-gray-900 dark:border-slate-800 !important;
+        @apply bg-neutral-100 border border-neutral-300;
+    }
+
+    .dark .vf-explorer-selected {
+        background-color: rgb(var(--v-theme-surface));
     }
 
     .vf-explorer-selector {
@@ -24,17 +28,29 @@
 
     /* Track */
     .vf-selector-area::-webkit-scrollbar-track-piece {
-        @apply bg-gray-100 dark:bg-slate-900/50;
+        @apply bg-gray-100;
+    }
+
+    .dark .vf-selector-area::-webkit-scrollbar-track-piece {
+        background-color: rgb(var(--v-theme-surface));
     }
 
     /* Handle */
     .vf-selector-area::-webkit-scrollbar-thumb {
-        @apply bg-gray-300 dark:bg-slate-700;
+        @apply bg-gray-300;
+    }
+
+    .dark .vf-selector-area::-webkit-scrollbar-thumb {
+        background-color: rgb(var(--v-theme-surface));
     }
 
     /* Handle on hover */
     .vf-selector-area::-webkit-scrollbar-thumb:hover {
-        @apply bg-gray-400 dark:bg-slate-600;
+        @apply bg-gray-400;
+    }
+
+    .dark .vf-selector-area::-webkit-scrollbar-thumb:hover {
+        background-color: rgb(var(--v-theme-surface));
     }
 
     .vf-selector-area::-webkit-scrollbar-corner {

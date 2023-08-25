@@ -1,4 +1,4 @@
-{
+const e = `{
     "Language": "语言",
     "Create": "新建",
     "Close": "关闭",
@@ -66,4 +66,7 @@
     "Drag&Drop: off": "拖放: 关闭",
     "The selected file exceeds the maximum file size. You cannot upload files greater than %s": "选中的文件已超过最大文件大小，只能上传小于 %s 的文件。"
   }
-  
+  `;
+export {
+  e as default
+};
