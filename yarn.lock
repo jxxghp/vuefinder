@@ -2301,9 +2301,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vuefinder@workspace:.":
+"vuefinder-zh@workspace:.":
   version: 0.0.0-use.local
-  resolution: "vuefinder@workspace:."
+  resolution: "vuefinder-zh@workspace:."
   dependencies:
     "@types/node": ^18.7.1
     "@vitejs/plugin-vue": ^4.0.0
