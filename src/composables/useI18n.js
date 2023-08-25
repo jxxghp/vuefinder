@@ -16,10 +16,10 @@ export function useI18n(id, locale, emitter) {
             translations.value = i18n;
             setStore('locale', locale);
             setStore('translations', i18n);
-            emitter.emit('vf-toast-push', {label: 'The language is set to ' + locale});
+            emitter.emit('vf-toast-push', {label: '已设置语言为 ' + locale});
         }).catch(e => {
-            emitter.emit('vf-toast-push', {label: 'The selected locale is not yet supported!', type:'error'});
-            changeLocale('en');
+            emitter.emit('vf-toast-push', {label: '选中的语言不支持！', type:'error'});
+            changeLocale('zh');
         });
     };
 

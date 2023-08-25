@@ -1,6 +1,6 @@
 {
-  "name": "vuefinder",
-  "version": "1.2.4",
+  "name": "vuefinder-zh",
+  "version": "1.2.4-1",
   "description": "Vuefinder is a file manager component for vuejs.",
   "type": "module",
   "files": [
@@ -13,7 +13,7 @@
     "build": "vite build",
     "preview": "vite preview"
   },
-  "homepage": "https://github.com/n1crack/vuefinder#readme",
+  "homepage": "https://github.com/jxxghp/vuefinder#readme",
   "keywords": [
     "vue",
     "file manager",
@@ -23,11 +23,11 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/n1crack/vuefinder.git"
+    "url": "git+https://github.com/jxxghp/vuefinder.git"
   },
   "author": {
-    "name": "Yusuf Özdemir",
-    "mail": "yusuf@ozdemir.be"
+    "name": "jxxghp",
+    "mail": "jxxghp@gmail.com"
   },
   "license": "MIT",
   "devDependencies": {
